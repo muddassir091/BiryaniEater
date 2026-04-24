@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-image: url("assets/images/website\ bg.png");
+    text-align: center;
+    font-family: "Oi", serif;
+    font-size: 40px;
+    color: white;
+}
+
+.title {
+    font-size: 70px;
+}
+
+.holder {
+    margin-top: 20px;
+}
+
+button {
+    border: solid;
+    border-radius: 16px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.493);
+    font-family: "Oi", serif;
+    font-size: 40px;
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);  /* makes it bigger */
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3); /* light shadow for contrast */
+    cursor: pointer;
+}
+
+.spin {
+  width: 200px;            /* optional */
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
